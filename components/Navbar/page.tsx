@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import { UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
@@ -23,6 +24,9 @@ const Navbar = () => {
           <Link href="/projects/cars">
             <li>Cars 🚨🚨🚨</li>
           </Link>
+          <li>
+            <UserButton afterSignOutUrl="/" />
+          </li>
         </ul>
       </nav>
     </header>
