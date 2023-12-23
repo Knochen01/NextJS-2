@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
-import Navbar from "@/components/Navbar/page";
+import Navbar from "@/components/shared/Navbar/page";
+
 import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
